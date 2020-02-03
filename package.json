@@ -32,7 +32,7 @@
     "jshint": "jshint index.js spec",
     "tslint": "tslint spec/*.ts",
     "lint": "npm run jshint && npm run tslint",
-    "tsc": "tsc; cp spec/*.js built_spec",
+    "tsc": "tsc && cp spec/*.js built_spec",
     "pretest": "npm run lint && npm run tsc",
     "test": "scripts/test.sh"
   },

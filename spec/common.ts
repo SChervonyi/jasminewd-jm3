@@ -99,7 +99,7 @@ export function getFakeDriver() {
       }
     }
   };
-};
+}
 
 export function getMatchers() {
   return {
@@ -123,7 +123,7 @@ export function getMatchers() {
       };
     }
   };
-};
+}
 
 // declare custom matcher types
 declare global {
@@ -138,4 +138,4 @@ declare global {
 
 export function isPending(managedPromise: wdpromise.Promise<any>) {
   return (managedPromise as any).state_ === 'pending';
-};
+}
